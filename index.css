@@ -39,7 +39,7 @@ h1{
      position: relative;
      margin: 1rem;
      padding: 3rem;
-     top: 3rempx;
+     top: 3rem;
   }
   .btn{
      padding-top: 55px;
@@ -186,6 +186,7 @@ h1{
    " main1 main1 main1 main1"
    "footer1 footer1 footer1 footer1";
  }
+ 
  header{
    grid-area: nav1;
  }
@@ -200,7 +201,6 @@ h1{
  }
  .display-flex{
    display: flex;
- 
    flex-direction: center;
  }
 .hijo-flex{
