@@ -33,13 +33,15 @@ h1{
     position: relative;
     display: none;
    }
+.padding{
+   padding: 20px;
+}
 
   .contenedor-principal{
      background-color: #EC7357;
      position: relative;
-     margin: 1rem;
-     padding: 3rem;
-     top: 3rem;
+     width: 100%;
+    
   }
   .btn{
      padding-top: 55px;
@@ -89,7 +91,7 @@ h1{
 }
 
 
-  .contenedor_comida{
+.contenedor_comida{
     border-radius: 10px;
     border:solid 2px black;
     display: inline-block;
@@ -97,14 +99,18 @@ h1{
      height: 550px;
     width: 32%;
     text-align: center;;
-  }
-  img{
+}
+
+img{
     width: 300px;
     height: 300px;
     animation-name: cambiarTamaño;
-    animation-duration: 3s;  }
+    animation-duration: 3s;  
+}
+
  header{
     margin-bottom: 50px;
+    width: 100%;
  }
  
  footer{
@@ -114,17 +120,26 @@ h1{
     width: 100%;
     text-align: center;
  }
- .container1{
-    border: 3px black solid;
+ .recept{
+   border: 3px black solid;
     padding: 30px;
     margin: 10px;
     position: relative;
-    width: 75%;
+    width: 100%;
     margin: auto;
  }
+
+ .container1{
+   border: 3px black solid;
+   padding: 30px;
+   margin: 10px;
+   position: relative;
+   width: 75%;
+   margin: auto;
+}
  input{
     margin-bottom: 12px;
-    width: 900px;
+    width: 80%;
  }
  .bloque{
     position: relative;
@@ -158,8 +173,8 @@ h1{
 
  .contenedorPostre{
     border: 2px solid salmon;
-    background-color: #EC7357;
-    padding: 20px;
+    background-color: salmon;
+    padding-bottom: 70px;
     width: 500px ;
     height: 50px;
     font-size: 40px;
@@ -199,6 +214,9 @@ h1{
  footer{
    grid-area: footer1;
  }
+ section{
+   grid-area: section;
+ }
  .display-flex{
    display: flex;
    flex-direction: center;
@@ -215,9 +233,9 @@ h1{
    .contenedor{
       display:grid;
       grid-template-areas: 
-      "nav1 nav1"
-      " main1 main1 "
-      "footer1 footer1";
+      "nav1"
+      " main1  section"
+      "footer1";
       gap: 20px;
    }
 }
@@ -228,9 +246,10 @@ h1{
    .contenedor{
       display:grid;
       grid-template-areas: 
-      "nav1 nav1"
-      " main1 main1 "
-      "footer1 footer1";
+      "nav1"
+      " main1 "
+      " section "
+      "footer1";
       gap: 10px;
    }
 }

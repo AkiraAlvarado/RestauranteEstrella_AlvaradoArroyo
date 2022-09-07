@@ -1,0 +1,300 @@
+@charset "UTF-8";
+h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  margin: 10px;
+  color: #EC7357;
+  font-size: 30px;
+  margin: 20px;
+}
+
+h3 {
+  margin: 10px;
+  color: green;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+}
+
+li {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul ul {
+  position: relative;
+  display: none;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.contenedor-principal {
+  background-color: #EC7357;
+  position: relative;
+  width: 100%;
+}
+
+.btn {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px;
+  color: aliceblue;
+  -webkit-animation-name: cambiarTamaño;
+          animation-name: cambiarTamaño;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes cambiarColor {
+  0% {
+    background-color: #EC7357;
+  }
+  100% {
+    background-color: rgb(38, 0, 255);
+  }
+}
+
+@keyframes cambiarColor {
+  0% {
+    background-color: #EC7357;
+  }
+  100% {
+    background-color: rgb(38, 0, 255);
+  }
+}
+@-webkit-keyframes cambiarTamaño {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.95);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+@keyframes cambiarTamaño {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.95);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+.btn:hover {
+  -webkit-animation-name: cambiarTamaño;
+          animation-name: cambiarTamaño;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.btn:hover {
+  -webkit-animation-name: cambiarColor;
+          animation-name: cambiarColor;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.contenedor_comida {
+  border-radius: 10px;
+  border: solid 2px black;
+  display: inline-block;
+  width: 500px;
+  height: 550px;
+  width: 32%;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  -webkit-animation-name: cambiarTamaño;
+          animation-name: cambiarTamaño;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+header {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+footer {
+  background-color: #EC7357;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.recept {
+  border: 3px black solid;
+  padding: 30px;
+  margin: 10px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.container1 {
+  border: 3px black solid;
+  padding: 30px;
+  margin: 10px;
+  position: relative;
+  width: 75%;
+  margin: auto;
+}
+
+input {
+  margin-bottom: 12px;
+  width: 80%;
+}
+
+.bloque {
+  position: relative;
+  width: 80%;
+  height: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.fotoPrincipal {
+  width: 800px;
+  height: 600px;
+  margin-left: 50px;
+}
+
+.display {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.container2 {
+  border: 2px solid black;
+  padding: 30px;
+  width: 80%;
+  height: 500px;
+  position: relative;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+.contenedorPostre {
+  border: 2px solid salmon;
+  background-color: salmon;
+  padding-bottom: 70px;
+  width: 500px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+label {
+  margin: auto;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+select {
+  margin: auto;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+/*HTML*/
+.contenedor {
+  display: grid;
+  grid-template-areas: "nav1 nav1 nav1 nav1" " main1 main1 main1 main1" "footer1 footer1 footer1 footer1";
+}
+
+header {
+  grid-area: nav1;
+}
+
+main {
+  grid-area: main1;
+}
+
+aside {
+  grid-area: aside1;
+}
+
+footer {
+  grid-area: footer1;
+}
+
+section {
+  grid-area: section;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: center;
+}
+
+.hijo-flex {
+  color: black;
+  line-height: 80px;
+}
+
+.hijo-flex p {
+  background-color: aquamarine;
+}
+
+/*Versión Tablet*/
+@media (min-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "nav1" " main1  section" "footer1";
+    gap: 20px;
+  }
+}
+/*Versión Celular*/
+@media (min-width: 350px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "nav1" " main1 " " section " "footer1";
+    gap: 10px;
+  }
+}/*# sourceMappingURL=index.css.map */
