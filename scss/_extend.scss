@@ -1,0 +1,8 @@
+.textoexplicativo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.textoexplicativo2{
+    background-color: bisque;
+    @extend .textoexplicativo;
+}

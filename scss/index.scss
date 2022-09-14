@@ -1,9 +1,12 @@
+body{
+   background-color: antiquewhite;
+}
 h1{
     text-align: center;
     font-size: 40px;
     letter-spacing: 5px;
  
- }
+  }
  h2{
     margin: 10px;
     color: #EC7357;
@@ -19,12 +22,6 @@ h1{
      list-style: none;
      font-size:0 /* truco por el uso de inline-block*/
   }
-  li {
-     display: inline-block;
-     width: 20%;
-     position:relative;
-     font-size: 14px;
-  }
   a{
      text-decoration: none;
   }
@@ -37,12 +34,17 @@ h1{
    padding: 20px;
 }
 
-  .contenedor-principal{
+   nav{
      background-color: #EC7357;
      position: relative;
      width: 100%;
-    
-  }
+     li{
+      display: inline-block;
+      width: 20%;
+      position:relative;
+      font-size: 14px;
+     }
+   }
   .btn{
      padding-top: 55px;
      padding-bottom: 55px;
@@ -170,6 +172,9 @@ img{
     margin-top: 100px;
 
  }
+ .imagen_platillos{
+   width: 10rem;
+ }
 
  .contenedorPostre{
     border: 2px solid salmon;
@@ -217,16 +222,10 @@ img{
  section{
    grid-area: section;
  }
- .display-flex{
-   display: flex;
-   flex-direction: center;
- }
+
 .hijo-flex{
    color: black;
    line-height: 80px;
-}
-.hijo-flex p{
-   background-color: aquamarine;
 }
 /*Versión Tablet*/ 
 @media(min-width:768px){
@@ -240,7 +239,6 @@ img{
    }
 }
 
-
 /*Versión Celular*/ 
 @media(min-width:350px){
    .contenedor{
@@ -253,3 +251,11 @@ img{
       gap: 10px;
    }
 }
+
+.botoncito{
+   background-color: #EC7357;
+}
+@import "maps";
+@import "bucles";
+@import "extend";
+@import "mixin"
