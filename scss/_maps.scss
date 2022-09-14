@@ -1,0 +1,13 @@
+$mapRedes: (facebook:blue, instagram:red);
+@each $red, $color in $mapRedes{
+    .#{$red}{
+        color: $color;
+    }
+}
+
+$estilo: (color2: rgb(10, 10, 10), tamfuente: 1rem);
+
+.texto{
+    color: map-get($estilo, color2);
+    font-size: map-get($estilo, tamfuente);
+}
