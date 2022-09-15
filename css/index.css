@@ -80,18 +80,9 @@ nav {
   animation-name: cambiarColor;
   animation-duration: 3s; }
 
-.contenedor_comida {
-  border-radius: 10px;
-  border: solid 2px black;
-  display: inline-block;
-  width: 500px;
-  height: 550px;
-  width: 32%;
-  text-align: center; }
-
 img {
-  width: 300px;
-  height: 300px;
+  width: 15rem;
+  height: 15rem;
   animation-name: cambiarTamaño;
   animation-duration: 3s; }
 
@@ -116,13 +107,20 @@ footer {
 
 .container1 {
   border: 3px black solid;
-  padding: 30px;
-  margin: 10px;
+  padding: 2rem;
+  margin: 1rem;
   position: relative;
-  width: 75%;
+  width: 90%;
   margin: auto; }
 
 input {
+  margin-bottom: 1.5rem;
+  width: 80%; }
+
+.marginBody {
+  margin-bottom: 10rem; }
+
+section {
   margin-bottom: 12px;
   width: 80%; }
 
@@ -152,29 +150,28 @@ input {
   margin-left: 10%;
   margin-top: 100px; }
 
-.imagen_platillos {
-  width: 10rem; }
-
 .contenedorPostre {
-  border: 2px solid salmon;
+  order: 2px solid salmon;
   background-color: salmon;
-  padding-bottom: 70px;
-  width: 500px;
-  height: 50px;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 80%;
+  height: 3rem;
   font-size: 40px;
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px; }
+  margin-left: 5rem;
+  margin-right: 5rem; }
 
-label {
-  margin: auto;
-  margin-left: 50px;
-  font-size: 30px; }
+.spaceleft {
+  margin-left: 20rem;
+  font-size: 1.5rem; }
 
 select {
-  margin: auto;
-  font-size: 30px;
-  margin-left: 5px; }
+  display: inline-block;
+  font-size: 2rem;
+  width: 12rem;
+  margin-left: 0.5rem; }
 
 /*HTML*/
 .contenedor {
@@ -196,9 +193,13 @@ footer {
 section {
   grid-area: section; }
 
-.hijo-flex {
-  color: black;
-  line-height: 80px; }
+.centrar {
+  display: flex;
+  justify-content: center; }
+
+.text-start {
+  line-height: 3rem;
+  word-spacing: 0.5rem; }
 
 /*Versión Tablet*/
 @media (min-width: 768px) {
