@@ -7,62 +7,62 @@ h1{
     letter-spacing: 5px;
  
   }
- h2{
+h2{
     margin: 10px;
     color: #EC7357;
     font-size: 30px;
     margin: 20px;
- }
- h3{
+}
+h3{
     margin: 10px;
     color: green;
     font-size: 30px;
- }
- ul {
+}
+ul {
      list-style: none;
      font-size:0 /* truco por el uso de inline-block*/
-  }
-  a{
-     text-decoration: none;
-  }
- 
- ul ul {
+}
+a{
+   text-decoration: none;
+}
+
+ul ul {
     position: relative;
     display: none;
-   }
+}
 .padding{
    padding: 20px;
 }
 
-   nav{
-     background-color: #EC7357;
-     position: relative;
-     width: 100%;
-     li{
-      display: inline-block;
-      width: 20%;
-      position:relative;
-      font-size: 14px;
-     }
+nav{
+   background-color: #EC7357;
+   position: relative;
+   width: 100%;
+   li{
+   display: inline-block;
+   width: 20%;
+   position:relative;
+   font-size: 14px;
    }
-  .btn{
-     padding-top: 55px;
-     padding-bottom: 55px;
-     padding-left: 100px;
-     padding-right: 100px;
-     border: 1px;
-     color: aliceblue;
-     animation-name: cambiarTamaño;
-     animation-duration:2s;
-  }
-  @keyframes cambiarColor{
-   0%{
-      background-color: #EC7357;
+}
+.btn{
+   padding-top: 55px;
+   padding-bottom: 55px;
+   padding-left: 100px;
+   padding-right: 100px;
+   border: 1px;
+   color: aliceblue;
+   animation-name: cambiarTamaño;
+   animation-duration:2s;
+}
+@keyframes cambiarColor{
+0%{
+   background-color: #EC7357;
    }
-   100%{
-      background-color: rgb(38, 0, 255);
+100%{
+   background-color: rgb(38, 0, 255);
    }
-  }
+}
   @keyframes cambiarTamaño{
       0%{
          transform: scale(1) ;
@@ -92,28 +92,17 @@ h1{
    animation-duration: 3s;
 }
 
-
-.contenedor_comida{
-    border-radius: 10px;
-    border:solid 2px black;
-    display: inline-block;
-    width: 500px; 
-     height: 550px;
-    width: 32%;
-    text-align: center;;
-}
-
 img{
-    width: 300px;
-    height: 300px;
+    width: 15rem;
+    height: 15rem;
     animation-name: cambiarTamaño;
     animation-duration: 3s;  
 }
 
- header{
-    margin-bottom: 50px;
-    width: 100%;
- }
+header{
+   margin-bottom: 50px;
+   width: 100%;
+}
  
  footer{
     background-color:#EC7357;
@@ -122,90 +111,97 @@ img{
     width: 100%;
     text-align: center;
  }
- .recept{
-   border: 3px black solid;
-    padding: 30px;
-    margin: 10px;
-    position: relative;
-    width: 100%;
-    margin: auto;
- }
-
- .container1{
+.recept{
    border: 3px black solid;
    padding: 30px;
    margin: 10px;
    position: relative;
-   width: 75%;
+   width: 100%;
    margin: auto;
 }
- input{
-    margin-bottom: 12px;
-    width: 80%;
- }
- .bloque{
-    position: relative;
-    width: 80%;
-    height: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
- }
 
- .fotoPrincipal{
-    width: 800px;
-    height: 600px;
-    margin-left: 50px;
- }
+.container1{
+   border: 3px black solid;
+   padding: 2rem;
+   margin: 1rem;
+   position: relative;
+   width: 90%;
+   margin: auto;
+}
+input{
+   margin-bottom: 1.5rem;
+   width: 80%;
+}
 
- .display{
-    display: inline-block;
-    margin: 0 auto;
- }
- .container2{
-    border: 2px solid  black;
-    padding: 30px;
-    width: 80%;
-    height: 500px;
-    position: relative;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 100px;
+.marginBody{
+   margin-bottom: 10rem;
+}
+ section{
+      margin-bottom: 12px;
+      width: 80%;
+}
+.bloque{
+   position: relative;
+   width: 80%;
+   height: 100px;
+   margin-left: 10%;
+   margin-right: 10%;
+}
 
- }
- .imagen_platillos{
-   width: 10rem;
- }
+.fotoPrincipal{
+   width: 800px;
+   height: 600px;
+   margin-left: 50px;
+}
 
- .contenedorPostre{
-    border: 2px solid salmon;
-    background-color: salmon;
-    padding-bottom: 70px;
-    width: 500px ;
-    height: 50px;
-    font-size: 40px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
- }
- label{
-    margin: auto;
-    margin-left: 50px;
-    font-size: 30px;
-    
- }
-  select{
-    margin: auto;
-    font-size: 30px;
-    margin-left: 5px;
- }
+.display{
+   display: inline-block;
+   margin: 0 auto;
+}
+.container2{
+   border: 2px solid  black;
+   padding: 30px;
+   width: 80%;
+   height: 500px;
+   position: relative;
+   margin-right: 10%;
+   margin-left: 10%;
+   margin-top: 100px;
+
+}
+
+.contenedorPostre{
+    order: 2px solid salmon;
+   background-color: salmon;
+   padding-bottom: 4rem;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   width: 80% ;
+   height: 3rem;
+   font-size: 40px;
+   text-align: center;
+   margin-left: 5rem;
+   margin-right: 5rem;
+}
+
+.spaceleft{
+   margin-left: 20rem;
+   font-size: 1.5rem;
+}
+select{
+   display: inline-block;
+   font-size: 2rem;
+   width: 12rem;
+   margin-left: 0.5rem;
+}
  /*HTML*/
- .contenedor{
+.contenedor{
    display: grid;
    grid-template-areas: 
    "nav1 nav1 nav1 nav1"
    " main1 main1 main1 main1"
    "footer1 footer1 footer1 footer1";
- }
+}
  
  header{
    grid-area: nav1;
@@ -223,9 +219,13 @@ img{
    grid-area: section;
  }
 
-.hijo-flex{
-   color: black;
-   line-height: 80px;
+.centrar{
+   display: flex;
+   justify-content: center;
+}
+.text-start{
+   line-height: 3rem;
+   word-spacing: 0.5rem;
 }
 /*Versión Tablet*/ 
 @media(min-width:768px){
