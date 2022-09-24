@@ -13,11 +13,6 @@ h2 {
   font-size: 30px;
   margin: 20px; }
 
-h3 {
-  margin: 10px;
-  color: green;
-  font-size: 30px; }
-
 ul {
   list-style: none;
   font-size: 0; }
@@ -31,6 +26,12 @@ ul ul {
 
 .padding {
   padding: 20px; }
+
+.display2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 nav {
   background-color: #EC7357;
@@ -56,7 +57,7 @@ nav {
   0% {
     background-color: #EC7357; }
   100% {
-    background-color: #2600ff; } }
+    background-color: #e7890e; } }
 
 @keyframes cambiarTamaño {
   0% {
@@ -149,6 +150,15 @@ section {
   margin-right: 10%;
   margin-left: 10%;
   margin-top: 100px; }
+
+.container3 {
+  padding: 2rem;
+  width: 90%;
+  height: 30rem;
+  position: relative;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 6rem; }
 
 .contenedorPostre {
   order: 2px solid salmon;
