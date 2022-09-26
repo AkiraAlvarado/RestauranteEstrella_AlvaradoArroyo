@@ -32,12 +32,6 @@ a {
 .padding {
   padding: 1rem; }
 
-.display2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
 nav {
   background: #EC7357;
   height: 5rem;
@@ -82,8 +76,7 @@ li a:hover {
 section {
   background: url(fondo.jpg) no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: calc(100vh - 80px); }
+  background-position: center center; }
 
 @keyframes cambiarTamaño {
   0% {
@@ -113,7 +106,12 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.2rem; }
+  footer a {
+    color: black; }
+  footer a:hover {
+    color: antiquewhite; }
 
 .recept {
   border: 3px black solid;
@@ -165,6 +163,16 @@ section {
   display: inline-block;
   margin: 0 auto; }
 
+.display2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.display3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
 .container2 {
   border: 2px solid  black;
   padding: 30px;
@@ -206,6 +214,9 @@ select {
   font-size: 2rem;
   width: 12rem;
   margin-left: 0.5rem; }
+
+.iconosFooter {
+  font-size: 1.2rem; }
 
 /*HTML*/
 .contenedor {
