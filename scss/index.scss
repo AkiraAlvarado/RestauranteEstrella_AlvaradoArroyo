@@ -1,12 +1,21 @@
+*{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   box-sizing: border-box;
+}
 body{
-   background-color: antiquewhite;
+   background-color: #f6e9d1;
+}
+header{
+   z-index: 10;
 }
 h1{
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 5px;
- 
-  }
+   text-align: center;
+   font-size: 40px;
+   letter-spacing: 5px;
+}
+
 h2{
     margin: 10px;
     color: #EC7357;
@@ -18,16 +27,13 @@ ul {
      list-style: none;
      font-size:0 /* truco por el uso de inline-block*/
 }
+
 a{
    text-decoration: none;
 }
 
-ul ul {
-    position: relative;
-    display: none;
-}
 .padding{
-   padding: 20px;
+   padding: 1rem;
 }
 
 .display2{
@@ -37,84 +43,104 @@ ul ul {
    justify-content: center;
 }
 nav{
-   background-color: #EC7357;
-   position: relative;
+   background: #EC7357;
+   height: 5rem;
    width: 100%;
-   li{
-   display: inline-block;
-   width: 20%;
-   position:relative;
-   font-size: 14px;
+   ul{
+      float: right;
+      margin-right: 1.5rem;
+      li{
+         display: inline-block;
+         line-height: 5rem;
+         margin: 0 5px;
+         a{
+            color: #fff;
+            font-size: 1rem;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+         }
+      }
    }
 }
-.btn{
-   padding-top: 55px;
-   padding-bottom: 55px;
-   padding-left: 100px;
-   padding-right: 100px;
-   border: 1px;
-   color: aliceblue;
-   animation-name: cambiarTamaño;
-   animation-duration:2s;
+
+.logo{
+   height: 5rem;
+   padding-bottom: 0.2rem;
+   box-shadow: none;
 }
-@keyframes cambiarColor{
-0%{
-   background-color: #EC7357;
+
+li 
+{
+   a:hover{
+   background: antiquewhite;
+   color: #EC7357;
+   font-weight: bolder;
+   transition: .5s;
    }
-100%{
-   background-color: rgb(231, 137, 14);
+      
+}
+
+.checkbtn{
+   font-size: 30px;
+   color: #fff;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+#check{
+   display: none;
+}
+section{
+   background: url(fondo.jpg) no-repeat;
+   background-size: cover;
+   background-position: center center;
+   height: calc(100vh - 80px);
+}
+
+@keyframes cambiarTamaño{
+   0%{
+      transform: scale(1) ;
    }
-}
-  @keyframes cambiarTamaño{
-      0%{
-         transform: scale(1) ;
-      }
-      20%{
-         transform: scale(0.95);
-      }
-      40%{
-         transform: scale(0.9);
-      }
-      60%{
-         transform: scale(0.95);
-      }
-      80%{
-         transform: scale(1);
-      }
-      100%{
-         transform: scale(1.02);
-      }
-  }
-.btn:hover{
-   animation-name: cambiarTamaño;
-   animation-duration: 3s;
-}
-.btn:hover{
-   animation-name: cambiarColor;
-   animation-duration: 3s;
+   20%{
+      transform: scale(0.95);
+   }
+   40%{
+      transform: scale(0.9);
+   }
+   60%{
+      transform: scale(0.95);
+   }
+   80%{
+      transform: scale(1);
+   }
+   100%{
+      transform: scale(1.02);
+   }
 }
 
 img{
-    width: 15rem;
-    height: 15rem;
-    animation-name: cambiarTamaño;
-    animation-duration: 3s;  
+   border-radius: 20px ;
+   box-shadow: 5px 6px 10px gray;
+   width: 15rem;
+   height: 15rem;
+   margin-bottom: 0.4rem;
+   animation-name: cambiarTamaño;
+   animation-duration: 3s;  
 }
 
-header{
-   margin-bottom: 50px;
+footer{
+   background-color:#EC7357;
+   position: fixed;
+   bottom: 0;
    width: 100%;
+   text-align: center;
 }
- 
- footer{
-    background-color:#EC7357;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
- }
 .recept{
    border: 3px black solid;
+   border-radius: 10px;
    padding: 30px;
    margin: 10px;
    position: relative;
@@ -124,24 +150,32 @@ header{
 
 .container1{
    border: 3px black solid;
+   border-radius: 10px;
    padding: 2rem;
    margin: 1rem;
    position: relative;
    width: 90%;
    margin: auto;
+   background-color: antiquewhite;
 }
 input{
    margin-bottom: 1.5rem;
    width: 80%;
+   padding:0.5rem 1rem;
+}
+select{
+   width: 20rem;
 }
 
 .marginBody{
    margin-bottom: 10rem;
 }
- section{
-      margin-bottom: 12px;
-      width: 80%;
+
+section{
+   margin-bottom: 12px;
+   width: 80%;
 }
+
 .bloque{
    position: relative;
    width: 80%;
@@ -151,9 +185,9 @@ input{
 }
 
 .fotoPrincipal{
-   width: 800px;
-   height: 600px;
-   margin-left: 50px;
+   width: 50rem;
+   height: 30rem;
+   margin-left: 3rem;
 }
 
 .display{
@@ -164,12 +198,11 @@ input{
    border: 2px solid  black;
    padding: 30px;
    width: 80%;
-   height: 500px;
+   height: 32rem;
    position: relative;
    margin-right: 10%;
    margin-left: 10%;
    margin-top: 100px;
-
 }
 
 .container3{
@@ -180,12 +213,10 @@ input{
    margin-right: 10%;
    margin-left: 10%;
    margin-top: 6rem;
-
 }
 
-
 .contenedorPostre{
-    order: 2px solid salmon;
+   order: 2px solid salmon;
    background-color: salmon;
    padding-bottom: 4rem;
    margin-bottom: 2rem;
@@ -217,7 +248,7 @@ select{
    "footer1 footer1 footer1 footer1";
 }
  
- header{
+header{
    grid-area: nav1;
  }
  main{
@@ -241,20 +272,55 @@ select{
    line-height: 3rem;
    word-spacing: 0.5rem;
 }
+
 /*Versión Tablet*/ 
 @media(min-width:768px){
+
+    nav ul li a{
+      font-size: 16px;
+   }
    .contenedor{
       display:grid;
       grid-template-areas: 
       "nav1"
-      " main1  section"
+      " main1 "
+      " section "
       "footer1";
       gap: 20px;
    }
+   
 }
 
 /*Versión Celular*/ 
-@media(min-width:350px){
+@media(min-width:350px)  and (max-width: 767px){
+   .checkbtn{
+      display: block;
+   }
+   ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #EC7357;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+   }
+   nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+   }
+   nav ul li a{
+      font-size: 20px;
+   }
+   li a:hover, li a.active{
+      background: none;
+      color: orange;
+   }
+   #check:checked ~ ul{
+      left:0;
+   }
    .contenedor{
       display:grid;
       grid-template-areas: 
@@ -265,6 +331,7 @@ select{
       gap: 10px;
    }
 }
+
 
 .botoncito{
    background-color: #EC7357;
